@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1{
+            margin-left: 2vw;
+            color: rgba(255, 120, 0, 1);
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; /* Create three columns */
+          gap: 2rem;
+          margin: 5vh 5vw;
+        }
+  
+        .item1 {
+            grid-area: 1 / 1 / 3 / 1;
+            background-color: rgba(0, 60, 255, 0.7);
+            padding: 2vh 3vw;
+            align-items: center;
+        }
+        
+        .item2 {
+          grid-area: 1 / 2 / 2 / 3; 
+          background-color: rgba(0, 60, 255, 0.7);
+          padding: 2vh 3vw;
+          align-items: center;
+        }
+
+        .item3 {
+          grid-area: 1 / 3 / 2 / 4; 
+          background-color: rgba(0, 60, 255, 0.7);
+          padding: 2vh 3vw;
+          align-items: center;
+        }
+
+        .item4 {
+          grid-area: 2 / 2 / 3 / 3; 
+          background-color: rgba(0, 60, 255, 0.7);
+          padding: 2vh 3vw;
+          align-items: center;
+        }
+
+        .item5 {
+          grid-area: 2 / 3 / 3 / 4; 
+          background-color: rgba(0, 60, 255, 0.7);
+          padding: 2vh 3vw;
+          align-items: center;
+        }
+        
+        .item6 {
+          grid-area: 3 / 1 / 4 / 2; 
+          background-color: rgba(0, 60, 255, 0.7);
+          padding: 2vh 3vw;
+          align-items: center;
+        }
+
+        .item7 {
+          grid-area: 3 / 2 / 4 / 4;
+          background-color: rgba(0, 60, 255, 0.7);
+          padding: 2vh 3vw;
+          align-items: center; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            <p>CSS grid - Template</p>
+        </h1>
+        <div class="container">
+            <div class="item1">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Accusamus earum temporibus harum esse. 
+                Nihil vel deserunt magnam ducimus enim, soluta obcaecati, vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, repellat nihil quisquam voluptates maxime ab repudiandae cumque error.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat in ducimus assumenda voluptatem dolor iste laudantium fugiat corporis dolorem.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eveniet obcaecati, atque iusto odio eum exercitationem corrupti molestias eligendi quisquam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi et minima saepe accusamus aspernatur deserunt velit molestias voluptatem. Atque, itaque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate repellendus explicabo at fugiat perspiciatis?
+              </p>
+            </div>
+            <div class="item2">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Accusamus earum temporibus harum esse. 
+                    Nihil vel deserunt magnam ducimus enim, soluta obcaecati, vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, repellat nihil quisquam voluptates maxime ab repudiandae cumque error.</p>
+            </div>
+            <div class="item3">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Accusamus earum temporibus harum esse. 
+                  Nihil vel deserunt magnam ducimus enim, soluta obcaecati, vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, repellat nihil quisquam voluptates maxime ab repudiandae cumque error.</p>
+              </div>
+              <div class="item4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Accusamus earum temporibus harum esse. 
+                  Nihil vel deserunt magnam ducimus enim, soluta obcaecati, vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, repellat nihil quisquam voluptates maxime ab repudiandae cumque error.</p>
+              </div>
+              <div class="item5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Accusamus earum temporibus harum esse. 
+                  Nihil vel deserunt magnam ducimus enim, soluta obcaecati, 
+                  vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, 
+                  repellat nihil quisquam voluptates maxime ab repudiandae cumque error.
+                </p>
+              </div>
+              <div class="item6">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Accusamus earum temporibus harum esse. 
+                    Nihil vel deserunt magnam ducimus enim, soluta obcaecati, 
+                    vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, 
+                    repellat nihil quisquam voluptates maxime ab repudiandae cumque error.
+                </p>
+              </div>
+              <div class="item7">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Accusamus earum temporibus harum esse. 
+                    Nihil vel deserunt magnam ducimus enim, soluta obcaecati, 
+                    vero rerum nulla possimus ratione quod, provident laboriosam amet? 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur nemo quidem dolorem, corporis facilis minus alias enim consequatur deleniti nam aliquid, 
+                    repellat nihil quisquam voluptates maxime ab repudiandae cumque error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Possimus vitae laborum magni asperiores reiciendis provident repellat itaque pariatur voluptatibus. Impedit quo ducimus doloremque. 
+                    Distinctio, iure? Officia officiis tempora saepe delectus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam necessitatibus vero atque animi? Id, aut vitae. Veniam, ipsam distinctio.
+                </p>
+              </div>
+          </div>
+    </main>
+</body>
+</html>
