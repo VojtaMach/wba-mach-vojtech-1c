@@ -18,12 +18,7 @@ body {
     text-decoration: none;
 }
 
-
-<<<<<<< HEAD
 /* Header itself :> */
-=======
-/* Header it self :> */
->>>>>>> master
 header {
     display: flex;
     justify-content: space-evenly;
@@ -39,29 +34,6 @@ header {
     display:flex;
     justify-content: center;
 }
-
-<<<<<<< HEAD
-.logo {
-    cursor: pointer;
-    display: flex;
-    justify-content: left;
-    height: 11vh;
-}
-
-.search {
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    height: 3vh;
-}
-
-.nav_links {
-    list-style: none;
-    padding-left: 0px;
-}
-
-=======
-
 .logo {
     cursor: pointer;
     display: flex;
@@ -81,7 +53,6 @@ header {
     padding-left: 0px;
 }
 
->>>>>>> master
 .nav_links li {
     display: inline-block;
     padding: 0px 17px;
