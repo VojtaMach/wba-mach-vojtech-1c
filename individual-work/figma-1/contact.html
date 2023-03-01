@@ -11,166 +11,135 @@
 
 <style>
     /*/ Uppercase transform /*/
-h1,  {
+h1, .send-button {
     text-transform: uppercase;
 }
 
 .header-contact {
     background-color: rgba(124, 116, 116, 0.3);
 }
-/* .contact-section {
-    width: 100%;
-    height: 724px;
-    background-color: #eeede9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-section h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    letter-spacing: 0.1em;
-    color: #000000;
-    margin-bottom: 42px;
-    margin-top: 10vh;
-}
-
-.contact-grid-wrapper {
+.contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -100px;
+    justify-content: center;
+}
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
 }
 
-.contact-grid {
+.grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr) 5.825fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-    
-.contact-1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-.contact-2 { 
-    grid-area: 1 / 2 / 2 / 3;
-}
-.contact-3 {
-    grid-area: 2 / 1 / 3 / 2;
-}
-.contact-4 {
-    grid-area: 2 / 2 / 3 / 3;
-}
-.contact-5 {
-    grid-area: 3 / 1 / 4 / 3;
-}
 
-.contact-1,
-.contact-2,
-.contact-3,
-.contact-4 {
-    background-color: #ccc9c5;
-    width: 380px;
-    height: 40px;
-    display: flex;
-    align-items: center; 
-    padding: 8px 20px;  
-}
-
-.contact-grid input {
-    background-color: transparent;
-    border: none;
-    font-family: 'Lato';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1em;
-    color: #000000;
+    max-width: 800px;
     width: 100%;
+    height: 100%;
+    padding: 0 18vw;
 }
-
-.contact-5 {
-    background-color: #ccc9c5;
-    width: 780px;
+.input-name, .input-surname, .input-email, .input-phone {
+    height: 40px;
+    width: 380px;
+}
+.input-name, .input-surname, .input-email, .input-phone, .input-message {
+    padding-left: 9px;
+    background: rgba(124, 116, 116, 0.3);
+    border: none;
+    color: rgba(0, 0, 0, 1);
+}
+.input-name {
+    grid-area: 1 / 1 / 2 / 3;
+}
+.input-surname {
+    grid-area: 1 / 3 / 2 / 5;
+}
+.input-email {
+    grid-area: 2 / 1 / 3 / 3;
+}
+.input-phone {
+    grid-area: 2 / 3 / 3 / 5;
+}
+.input-message {
+    grid-area: 3 / 1 / 6 / 5;
     height: 233px;
-    display: flex;
-    align-items: flex-start;
-    padding: 8px 20px;
 }
 
 .send-button {
-    width: 180px;
-    height: 48px;
-    left: 630px;
-    top: 695px;
-    background-color: #7C7474;
-    border: none;
-    font-family: 'Lato';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 2vh;
+    margin-bottom: 12vh;
+    height: 55px;
+    width: 172px;
+
+    font-size: 1.125em;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    color: #F8F7EC;
-    margin-top: 20px;
-    cursor: pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #7C7474;
+    color: #F8F7EC;
+    border: none;
+    cursor: pointer;
 }
 
 ::placeholder {
-    color: black;
+    color: rgba(0, 0, 0, 0.75);
+    vertical-align: text-top; /* nefunguje nevim no*/
 }
 
-@media (max-width: 390px) {
-    .contact-grid {
+@media (max-width: 1278px) {
+    .grid {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 70%;
+        height: auto;
+        max-width: none;
+        row-gap: 20px;
+
+        grid-column-gap: 0;
+        padding: 0;
     }
 
-    .contact-1,
-    .contact-2,
-    .contact-3,
-    .contact-4 {
-        width: 310px;
-        height: 30px;
+    .input-name, .input-surname, .input-email, .input-phone {
+        height: 43px;
+    }
+    .input-name, .input-surname, .input-email, .input-phone, .input-message {
+        width: auto;
+    }   
+
+    .send-button {
+        margin-top: 4.5vh;
+        margin-bottom: 7vh;
     }
 
-
-    .contact-5 {
-        width: 310px;
-        height: 144px;
+    h1 {
+        font-size: 38px;
+        line-height: 48px;
+        margin: 4.5vh 0;
     }
+}
 
-    .contact-container h1 {
-        font-size: 20px;
-        margin-top: 75px;
-        margin-bottom: 38px;
+@media (max-width: 635px) {
+    .input-message {
+        height: 195px;
     }
+}
 
-   .about-footer {
-    height: 104px;
-   }
-
-   .contact-grid-wrapper button {
-    margin-top: 38px;
-   }
-
-   .contact-container {
-    height: 650px;
-   }
-
-   .contact-container button {
-    width: 120px;
-    height: 25px;
-    font-size: 11px;
-    margin-top: 38px;
-   }
-} */
+@media (max-width: 391px) {
+    .grid {
+        width: 75%;
+    }
+    .input-message {
+        height: 165px;
+    }
+}
 </style>
 
 <body>
@@ -190,31 +159,18 @@ h1,  {
             </div>
         </header>
 
-        <!-- Contact Container
-        <div class="contact-section">
-            <div class="contact-grid-wrapper">
-                <h1>KONTAKT</h1>
-                <div class="contact-grid">
-                    <div class="contact-1">
-                        <input type="text" placeholder="Jméno">
-                    </div>
-                    <div class="contact-2">
-                        <input type="text" placeholder="Příjmení">
-                    </div>
-                    <div class="contact-3">
-                        <input type="text" placeholder="E-mail">
-                    </div>
-                    <div class="contact-4">
-                        <input type="text" placeholder="Telefon">
-                    </div>
-                    <div class="contact-5">
-                        <input type="text" placeholder="Vaše zpráva" contenteditable>
-                    </div>
-                </div> 
-                <button class="send-button">odeslat</button>
+        <section class="contact-section">
+            <h1>kontakt</h1>
+            <div class="grid">
+                <input type="" placeholder="Jméno" class="input-name">
+                <input type="" placeholder="Příjmení" class="input-surname">
+                <input type="" placeholder="E-mail" class="input-email">
+                <input type="" placeholder="Telefon" class="input-phone">
+                <input type="" placeholder="Vaše zpráva" class="input-message">
             </div>
-        </div> -->
-        
+            <button class="send-button">odeslat</button>
+        </section>
+
         <footer>
             <div class="footer-content">
                 <p>Obchodní podmínky</p>

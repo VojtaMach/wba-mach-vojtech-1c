@@ -1,1 +1,3 @@
 section na obsah
+nepouzivat procenta na gaps v gridu (dela overflow a pak se to neda opravit)
+    pouzivat px nebo jinou statickou jednotku

@@ -18,20 +18,20 @@ main {
 .header-info {
     background-color: rgba(124, 116, 116, 0.3);
 }
-.grid{
+.grid-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70%;
     width: 100%;
+    margin-bottom: 6%;
 }
-.grid-content {
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 80%;
-    row-gap: 40%;
-    margin-bottom: 5%;
+    grid-row-gap: 40%;
 }
 .item{
     display: flex;
@@ -43,12 +43,19 @@ main {
 
 
 @media (max-width: 500px) {
-    .grid{
+    .grid-section {
         display: flex;
         flex-direction: column;
+        height: calc(100% - 200px);
         row-gap: 50px;
         justify-content: center;
-        margin-left: 25%;
+        margin: 9% 0;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 30px;
+        width: auto;
     }
     .item img{
         height: 50px;
@@ -76,8 +83,8 @@ main {
             </div>
         </header>
 
-        <section class="grid">
-            <div class="grid-content">
+        <section class="grid-section">
+            <div class="grid">
                 <div class="item">
                     <img src="pictures/coronavirus.png" alt=""> <p style="width: 120px;">aktuálně covid-19</p>
                 </div>
